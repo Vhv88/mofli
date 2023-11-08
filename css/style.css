@@ -30,3 +30,27 @@
   height: auto;
   cursor: pointer;
 }
+#fullSizeImage {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+#fullSizeImage img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+}
+.no-scroll {
+  overflow: hidden; /* Deshabilita el desplazamiento en el body */
+  height: 100%; /* Fija la altura del body al 100% */
+}
+
