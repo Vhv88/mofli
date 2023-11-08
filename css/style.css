@@ -50,7 +50,7 @@
   max-height: 90%;
 }
 .no-scroll {
-  overflow: hidden; /* Deshabilita el desplazamiento en el body */
-  height: 100%; /* Fija la altura del body al 100% */
+  overflow: hidden;
+  height: 100%;
 }
 
