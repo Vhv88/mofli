@@ -191,12 +191,35 @@
                     id="thumbnailImage"
                     src="./images/thumb-2.png"
                     class="thumb card-img-top"
+                    style="cursor: default"
                   />
+                  <div id="fullSizeImage" onclick="hideFullImage()">
+                    <img
+                      src="./images/fullmof1.png"
+                      alt="Mofly with a funny face asking for food like crying."
+                    />
+                  </div>
+                  <script>
+                    function showFullImage(imagePath) {
+                      var fullSizeImage =
+                        document.getElementById("fullSizeImage");
+                      fullSizeImage.style.display = "block";
+                      fullSizeImage.querySelector("img").src = imagePath;
+                      document.body.classList.add("no-scroll");
+                    }
+
+                    function hideFullImage() {
+                      var fullSizeImage =
+                        document.getElementById("fullSizeImage");
+                      fullSizeImage.style.display = "none";
+                      document.body.classList.remove("no-scroll");
+                    }
+                  </script>
+
                   <div class="card-body">
                     <p class="card-text" style="text-align: center">
                       Where is my wet food? 😭
                     </p>
-                    <!-- Clase modificada a 'justify-content-center' para centrar los elementos -->
                     <div
                       class="d-flex justify-content-center align-items-center"
                     >
@@ -204,6 +227,7 @@
                         <button
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
+                          onclick="showFullImage('./images/fullmof1.png')"
                         >
                           View
                         </button>
@@ -218,12 +242,12 @@
                     id="thumbnailImage"
                     src="./images/thumb-3.png"
                     class="thumb card-img-top"
+                    style="cursor: default"
                   />
                   <div class="card-body">
                     <p class="card-text" style="text-align: center">
                       🎶 Hello darkness my old friend..🎶
                     </p>
-                    <!-- Clase modificada a 'justify-content-center' para centrar los elementos -->
                     <div
                       class="d-flex justify-content-center align-items-center"
                     >
@@ -231,6 +255,7 @@
                         <button
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
+                          onclick="showFullImage('./images/mofstaring.png')"
                         >
                           View
                         </button>
@@ -245,12 +270,12 @@
                     id="thumbnailImage"
                     src="./images/thumb-1.png"
                     class="thumb card-img-top"
+                    style="cursor: default"
                   />
                   <div class="card-body">
                     <p class="card-text" style="text-align: center">
                       Just thinking... 🤔
                     </p>
-                    <!-- Clase modificada a 'justify-content-center' para centrar los elementos -->
                     <div
                       class="d-flex justify-content-center align-items-center"
                     >
@@ -258,6 +283,7 @@
                         <button
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
+                          onclick="showFullImage('./images/mofthinking.png')"
                         >
                           View
                         </button>
